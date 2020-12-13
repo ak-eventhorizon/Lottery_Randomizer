@@ -2,7 +2,7 @@
 'use strict';
 
 function test(){
-    console.log(`Test complete!`);
+    console.log(`Model check complete!`);
 }
 
 export { test };
