@@ -16,7 +16,8 @@
 /****************************** COLOR SCHEME - BEGIN ******************************/
 :root {
 	--pure-black: #000000;  /* color: var(--pure-black) */
-	--pure-white: #ffffff;  /* color: var(--pure-white) */
+	--yellow: #f9eb30;
+	--orange: #fe8933;
 }
 /****************************** COLOR SCHEME - END ******************************/
 
@@ -24,11 +25,59 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
+	font-family: Roboto;
 }
 
+#set1, #set2 {
+	margin: 8vmin 2vmin;
 
+	display: grid;
+	gap: 2vmin;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
 
+.cell {
+	display: flex;
+    align-items: center;
+    justify-content: center;
 
+	height: 8vmin;
+	border: 1px solid black;
+	border-radius: 1vmin;
+
+	font-size: 1.5rem;
+	font-weight: bold;
+	background-color: var(--yellow);
+}
+
+#controls {
+	display: grid;
+	margin: 0 2vmin;
+	height: 25vmin;
+}
+
+button {
+	/* reset button default styles */
+	border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+	background: transparent;
+	color: inherit;
+    font: inherit;
+}
+
+#controls button {
+	border: 2px solid black;
+	border-radius: 2vmin;
+
+	font-size: 2rem;
+	font-weight: bold;
+	background-color: var(--orange);
+}
 
 
 

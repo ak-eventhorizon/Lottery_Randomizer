@@ -1,8 +1,13 @@
 // @ts-check -- enable type checking
 'use strict';
 
-function test(){
-    console.log(`Controller check complete!`);
+function addEventListenerOnMainButton(){
+    let mainButton = document.getElementById('mainButton');
+
+    mainButton.addEventListener('click', () => {
+        console.log('Button CLICK!');
+    });
+    
 }
 
-export { test };
+export { addEventListenerOnMainButton };
