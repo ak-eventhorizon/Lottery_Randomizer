@@ -1,11 +1,5 @@
-# Main Title
+# Lottery Randomizer
 
-### Sub title
+### Pick random combination for a lottery to make you rich!
 
-normal
-
-*italic*
-
-**bold**
-
-[Краткое руководство по Markdown](https://paulradzkov.com/2014/markdown_cheatsheet/)
+Just keep trying
