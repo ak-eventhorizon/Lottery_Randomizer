@@ -5,9 +5,11 @@ import * as model from "./modules/model.js";
 import * as view from "./modules/view.js";
 import * as controller from "./modules/controller.js";
 
-view.generateUi4of20At('app');
-controller.addEventListenerOnMainButton();
 
+window.onload = function () {
+    view.generateUi4of20At('app');
+    controller.addEventListenerOnMainButton();
+};
 
 // Model - предоставляет данные и реагирует на команды контроллера, изменяя своё состояние
 
