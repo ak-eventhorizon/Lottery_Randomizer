@@ -1,6 +1,8 @@
 // @ts-check -- enable type checking
 'use strict';
 
+
+
 function generateUi4of20At(rootID){
 
     let appRootElement = document.getElementById(rootID);
@@ -41,4 +43,31 @@ function generateUi4of20At(rootID){
 }
 
 
-export { generateUi4of20At };
+
+function markWinNumbers(arrWinSet, numOfSet) {
+
+    for (let i = 0; i < arrWinSet.length; i++) {
+        let currentElement = document.getElementById(`c${numOfSet}_${arrWinSet[i]}`); //c1_14
+        currentElement.classList.toggle('marked');
+    }
+}
+
+
+
+function resetCellMarking(){
+    //reset 'marked' class from all cells in IU
+
+    let cells = document.getElementsByClassName('cell'); // HTML Collection
+    
+    for (let i = 0; i < cells.length; i++) {
+        let element = cells[i];
+        
+        if (element.classList.contains('marked')) {
+            element.classList.toggle('marked');
+        }
+    }
+}
+
+
+
+export { generateUi4of20At, markWinNumbers, resetCellMarking };
