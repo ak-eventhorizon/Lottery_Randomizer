@@ -8,6 +8,7 @@ import * as controller from "./modules/controller.js";
 view.generateUi4of20At('app');
 controller.addEventListenerOnMainButton();
 
+
 // Model - предоставляет данные и реагирует на команды контроллера, изменяя своё состояние
 
 // View - отвечает за отображение данных пользователю, реагируя на изменения модели (фактически это
