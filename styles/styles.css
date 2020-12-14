@@ -29,11 +29,16 @@
 	font-family: Roboto;
 }
 
+#app {
+	max-width: 90vmin;
+    margin: auto;
+}
+
 #set1, #set2 {
 	margin: 8vmin 2vmin;
 
 	display: grid;
-	gap: 2vmin;
+	gap: 1vmin;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
@@ -50,6 +55,10 @@
 	font-size: 1.5rem;
 	font-weight: bold;
 	background-color: var(--yellow);
+}
+
+.marked {
+	background-color: var(--orange);
 }
 
 #controls {
