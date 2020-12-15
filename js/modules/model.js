@@ -1,6 +1,10 @@
 // @ts-check -- enable type checking
 'use strict';
 
+/**
+ * @param {number} min - minimum range border
+ * @param {number} max - maximum range border
+ */
 function getRandomIntIncusive(min, max) {
     //return random integer fron min(included) to max(included)
     return Math.floor(Math.random() * (max - min + 1)) + min;

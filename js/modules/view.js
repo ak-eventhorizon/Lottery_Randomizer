@@ -1,8 +1,9 @@
 // @ts-check -- enable type checking
 'use strict';
 
-
-
+/**
+ * @param {string} rootID - ID of HTML element
+ */
 function generateUi4of20At(rootID){
 
     let appRootElement = document.getElementById(rootID);
@@ -44,6 +45,10 @@ function generateUi4of20At(rootID){
 
 
 
+/**
+ * @param {object} arrWinSetIndexes - array with 4 elements
+ * @param {number} numOfSet - number of set (1 or 2)
+ */
 function markWinNumbers(arrWinSetIndexes, numOfSet) {
     // set class 'marked' on cells (from arrWinSetIndexes) of 1st or 2nd (numOfSet) cells set 
 
