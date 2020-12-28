@@ -31,6 +31,7 @@
 
 #app {
 	max-width: 90vmin;
+	min-width: 230px;
     margin: auto;
 }
 
@@ -98,7 +99,21 @@ button {
 @media only screen and (max-width: 600px) {} 
 
 /* Small devices (portrait tablets and large phones, 601px-->>> and up) */
-@media only screen and (min-width: 601px) {} 
+@media only screen and (min-width: 601px) {
+	
+	#app {
+		height: 100vmin;
+	}
+
+	.cell {
+		height: 5vmin;
+	}
+
+	#controls {
+		height: 15vmin;
+	}
+
+} 
 
 /* Medium devices (landscape tablets, 768px-->>> and up) */
 @media only screen and (min-width: 768px) {} 
